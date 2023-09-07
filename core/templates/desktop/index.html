@@ -1,22 +1,19 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block META %}
 <meta content="description test" name="description">
 <meta content="keywords test" name="keywords">
 {% endblock %}
 {% block CONTENT %}
+<input type="hidden" name="LANGUAGE_CODE" value="{{LANGUAGE_CODE}}">
 {% include 'utils/header.html' %}
 {% include 'utils/hero.html' %}
 <main id="main">
-{% include 'utils/sections/about.html' %}
+{% include 'utils/sections/features.html' %}
 {% include 'utils/sections/counts.html' %}
 {% include 'utils/sections/services.html' %}
-{% include 'utils/sections/features.html' %}
-{% include 'utils/sections/last_blog_posts.html' %}
-{% include 'utils/sections/pricing.html' %}
-{% include 'utils/sections/faq.html' %}
-{% include 'utils/sections/contact.html' %}
 </main>
-{% include 'utils/sections/about.html' %}
 {% include 'utils/footer.html' %}
 {% include 'utils/back_to_top.html' %}
+<script src="{% static 'assets/js/desktop/index.js' %}"></script>
 {% endblock %}

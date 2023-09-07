@@ -10,10 +10,11 @@ admin.autodiscover()
 
 urlpatterns = [
     path("sitemap.xml", sitemap, {"sitemaps": {"cmspages": CMSSitemap}}),
+    path('desk/', include('desk.path'))
 ]
 
 
-urlpatterns += i18n_patterns(path("admin/", admin.site.urls), path("", include("cms.urls")))
+urlpatterns += i18n_patterns(path("UNIQUEVSTECHadministratorPANEL/", admin.site.urls), path("", include("cms.urls")))
 
 # This is only needed when using runserver.
 if settings.DEBUG:

@@ -167,7 +167,8 @@ INSTALLED_APPS = [
     'djangocms_style',
     'djangocms_googlemap',
     'djangocms_video',
-    'core'
+    'core',
+   'desk'
 ]
 
 LANGUAGE_CODE = 'fa'
