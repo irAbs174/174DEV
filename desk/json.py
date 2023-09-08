@@ -5,5 +5,25 @@ from django.http import JsonResponse
 
 
 @csrf_exempt
+def set_content_index(request):
+    code = request.POST.get('code')
+    if code == "en" :
+        return JsonResponse({'status' : 'en', 'success' : True})
+    elif code == "fa":
+        return JsonResponse({'status' : 'fa', 'success' : True})
+    elif code == "ar":
+        return JsonResponse({'status' : 'ar', 'success' : True})
+    else:
+        return JsonResponse({'status' : 'BAD_REQUESR_403', 'success' : False})
+
+@csrf_exempt
 def set_language(request):
-    return JsonResponse({'status' : '=>=>=>=> SUCCESS <=<=<=<=', 'success' : True})
+    code = request.POST.get('code')
+    if code == "en" :
+        return JsonResponse({'status' : 'en', 'success' : True})
+    elif code == "fa":
+        return JsonResponse({'status' : 'fa', 'success' : True})
+    elif code == "ar":
+        return JsonResponse({'status' : 'ar', 'success' : True})
+    else:
+        return JsonResponse({'status' : 'BAD_REQUESR_403', 'success' : False})

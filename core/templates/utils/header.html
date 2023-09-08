@@ -3,42 +3,82 @@
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center justify-content-between">
       <a href="/" class="logo"><img src="{% static 'assets/img/branding/174/android-chrome-192x192.png' %}" alt="" class="img-fluid"></a>
+      {% if LANGUAGE_CODE == 'fa' %}
       <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>
-          <li class="dropdown"><button class="btn btn-outline-light">
-            <span class="b-fa fa fa-globe"></span>
-          </button>
-        <ul>
-          <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-        </ul></li>
-          <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
+      <ul>
+        <li><a class="nav-link scrollto" href="#services">درباره ما</a></li>
+        <li><a class="nav-link scrollto" href="#services">سوالات متداول</a></li>
+        <li><a class="nav-link scrollto" href="#services">سرگرمی</a></li>
+        <li><a class="nav-link scrollto" href="#services">شبکه اجتماعی</a></li>
+        <li><a class="nav-link scrollto" href="#services">انجمن</a></li>
+        <li><a class="nav-link scrollto" href="#services">سرویس ها</a></li>
+        <li><a class="nav-link scrollto active" href="#hero">خانه</a></li>
+        <li class="dropdown"><button class="btn btn-outline-secondary btn-lg">
+          <span class="b-fa fa fa-globe"></span>
+        </button>
+      <ul>
+        <li><a type="submit" class="set_en" >English</a></li>
+        <li><a type="submit" class="set_ar" >العربیة</a></li>
+      </ul></li>
+      {% if user.is_authenticated %}
+      <li><a class="getstarted scrollto" href="#about">حساب کاربری</a></li>
+      {% else %}
+      <li><a class="getstarted scrollto" href="#about">ورود | ثبت نام</a></li>
+      {% endif %}
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav><!-- .navbar -->
+      {% elif LANGUAGE_CODE == 'ar' %}
+      <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link scrollto" href="#services">معلومات عنا</a></li>
+        <li><a class="nav-link scrollto" href="#services">أسئلة مكررة</a></li>
+        <li><a class="nav-link scrollto" href="#services">ترفيه</a></li>
+        <li><a class="nav-link scrollto" href="#services">شبكة اجتماعية</a></li>
+        <li><a class="nav-link scrollto" href="#services">منظمة</a></li>
+        <li><a class="nav-link scrollto" href="#services">خدمات</a></li>
+        <li><a class="nav-link scrollto active" href="#hero">بيت</a></li>
+        <li class="dropdown"><button class="btn btn-outline-secondary btn-lg">
+          <span class="b-fa fa fa-globe"></span>
+        </button>
+      <ul>
+        <li><a type="submit" class="set_en" >English</a></li>
+        <li><a type="submit" class="set_fa" >فارسی</a></li>
+      </ul></li>
+      {% if user.is_authenticated %}
+      <li><a class="getstarted scrollto" href="#about">حساب</a></li>
+      {% else %}
+      <li><a class="getstarted scrollto" href="#about">تسجيل الدخول | يسجل</a></li>
+      {% endif %}
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav><!-- .navbar -->
+      {% else %}
+      <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+        <li><a class="nav-link scrollto" href="#services">Services</a></li>
+        <li><a class="nav-link scrollto" href="#services">forum</a></li>
+        <li><a class="nav-link scrollto" href="#services">social network</a></li>
+        <li><a class="nav-link scrollto" href="#services">entertainment</a></li>
+        <li><a class="nav-link scrollto" href="#services">faq</a></li>
+        <li><a class="nav-link scrollto" href="#services">about</a></li>
+        <li class="dropdown"><button class="btn btn-outline-secondary btn-lg">
+          <span class="b-fa fa fa-globe"></span>
+        </button>
+      <ul>
+        <li><a type="submit" class="set_fa" >فارسی</a></li>
+        <li><a type="submit" class="set_ar" >العربیة</a></li>
+      </ul></li>
+      {% if user.is_authenticated %}
+      <li><a class="getstarted scrollto" href="#about">Account</a></li>
+      {% else %}
+      <li><a class="getstarted scrollto" href="#about">login | register</a></li>
+      {% endif %}
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav><!-- .navbar -->
+      {% endif %}
+      <nav id="navbar" class="navbar">
     </div>
   </header><!-- End Header -->
