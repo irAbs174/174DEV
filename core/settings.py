@@ -17,14 +17,7 @@ SECRET_KEY = 'o)r!qmzkgrh3ejdxqqub&w3gp-!2d5l&bu5z=b14nkyin5b_7)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-irabs174-174dev-r1qq3pr355e.ws-eu104.gitpod.io']
-
-
-# Application definition
-
-
-
-
+ALLOWED_HOSTS = ['8000-irabs174-174dev-csn3jauncu8.ws-eu104.gitpod.io']
 
 ROOT_URLCONF = 'core.urls'
 
@@ -138,6 +131,8 @@ INSTALLED_APPS = [
     'django.contrib.sitemaps',
     'django.contrib.staticfiles',
     'django.contrib.messages',
+    'rest_framework',
+    'rest_framework.authtoken',
     'cms',
     'menus',
     'sekizai',
@@ -170,6 +165,12 @@ INSTALLED_APPS = [
     'core',
    'desk'
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',
+    ],
+}
 
 LANGUAGE_CODE = 'fa'
 

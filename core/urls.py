@@ -10,7 +10,8 @@ admin.autodiscover()
 
 urlpatterns = [
     path("sitemap.xml", sitemap, {"sitemaps": {"cmspages": CMSSitemap}}),
-    path('desk/', include('desk.path'))
+    path('desk/', include('desk.path')),
+    path('api/', include('desk.api_urls')),
 ]
 
 
