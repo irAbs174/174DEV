@@ -2,39 +2,102 @@
 <!-- ======= Features Section ======= -->
 <section id="features" class="features">
     <div class="container" data-aos="fade-up">
-
+      {% if LANGUAGE_CODE == 'fa' %}
       <div class="section-title">
-        <h2>Features</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        <h2>برخی از مهم ترین ویژگی های ما</h2>
       </div>
 
       <div class="row">
         <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column align-items-lg-center">
           <div class="icon-box mt-5 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
             <i class="bx bx-receipt"></i>
-            <h4>Est labore ad</h4>
-            <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+            <h4>ارائه خدمات رایگان:</h4>
+            <p>ما متفاوتیم، همه خدمات ما برای همیشه به صورت رایگان در دسترس کاربران است. هر چیزی که در جاهای دیگر با پول فروخته می‌شود، در اینجا به صورت رایگان موجود است</p>
           </div>
           <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="200">
             <i class="bx bx-cube-alt"></i>
-            <h4>Harum esse qui</h4>
-            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+            <h4>توسعه پذیری:</h4>
+            <p>ما همیشه در حال ارتقاء و گسترش خدمات خود هستیم. با افزایش نیازهای کاربران، ما سعی می‌کنیم خدمات جدید و بهتری ارائه دهیم</p>
           </div>
           <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="300">
             <i class="bx bx-images"></i>
-            <h4>Aut occaecati</h4>
-            <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+            <h4>جامعه‌ای تعاملی:</h4>
+            <p>ما یک جامعه ایجاد کرده‌ایم که شامل کاربران حرفه‌ای و غیر حرفه‌ای می‌شود. این تعامل بین افراد ماهر و کاربران جدید، تجربه‌ای ارزشمند برای دیگران است. تجربه کاربران حرفه‌ای چراغ راهی است برای کاربران دیگر</p>
           </div>
           <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="400">
             <i class="bx bx-shield"></i>
-            <h4>Beatae veritatis</h4>
-            <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
+            <h4>توجه به امنیت:</h4>
+            <p>امنیت کاربران برای ما بسیار مهم است و به دنبال ارتقاء امنیت و حفظ اطمینان کاربران هستیم.</p>
           </div>
         </div>
         <div class="image col-lg-6 order-1 order-lg-2 " data-aos="zoom-in" data-aos-delay="100">
           <img src="{% static 'assets/img/features.svg' %}" alt="" class="img-fluid">
         </div>
       </div>
+      {% elif LANGUAGE_CODE == 'ar' %}
+      <div class="section-title">
+        <h2>بعضٌ من أبرز ميزاتنا</h2>
+      </div>
 
+      <div class="row">
+        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column align-items-lg-center">
+          <div class="icon-box mt-5 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
+            <i class="bx bx-receipt"></i>
+            <h4>تقديم خدمات مجانية:</h4>
+            <p>نحن مختلفون، كل خدماتنا متاحة بشكل مجاني للمستخدمين إلى الأبد. كل ما يتم بيعه مقابل المال في أماكن أخرى، متاح هنا بشكل مجاني</p>
+          </div>
+          <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="200">
+            <i class="bx bx-cube-alt"></i>
+            <h4>التوسع المستمر:</h4>
+            <p>نحن دائماً في طور التطوير والنمو. مع زيادة احتياجات المستخدمين، نحن نسعى لتقديم خدمات جديدة وأفضل.</p>
+          </div>
+          <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="300">
+            <i class="bx bx-images"></i>
+            <h4>مجتمع تفاعلي:</h4>
+            <p>قمنا بإنشاء مجتمع يضم مستخدمين محترفين وغير محترفين. هذا التفاعل بين الأفراد الماهرين والمبتدئين يوفر تجربة قيمة للآخرين. تجربة المستخدمين المحترفين هي مصدر إلهام يضيء الطريق للمستخدمين الآخرين</p>
+          </div>
+          <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="400">
+            <i class="bx bx-shield"></i>
+            <h4>التركيز على الأمان:</h4>
+            <p>أمان المستخدمين يأتي في المقام الأول بالنسبة لنا ونحن نسعى جاهدين لتعزيز الأمان والحفاظ على ثقة المستخدمين</p>
+          </div>
+        </div>
+        <div class="image col-lg-6 order-1 order-lg-2 " data-aos="zoom-in" data-aos-delay="100">
+          <img src="{% static 'assets/img/features.svg' %}" alt="" class="img-fluid">
+        </div>
+      </div>
+      {% else %}
+      <div class="section-title">
+        <h2>Some of Our Key Features:</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column align-items-lg-center">
+          <div class="icon-box mt-5 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
+            <i class="bx bx-receipt"></i>
+            <h4>Offering Free Services:</h4>
+            <p>We're different—all our services are forever free for users. Anything sold elsewhere for money is available here at no cost.</p>
+          </div>
+          <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="200">
+            <i class="bx bx-cube-alt"></i>
+            <h4>Continuous Development:</h4>
+            <p>We're always evolving and expanding our services. As user needs grow, we strive to provide new and improved services.</p>
+          </div>
+          <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="300">
+            <i class="bx bx-images"></i>
+            <h4>Interactive Community:</h4>
+            <p>We've built a community comprising both professional and non-professional users. This interaction between seasoned experts and newcomers provides valuable insight for others. The experience of professional users acts as a guiding light for other users.</p>
+          </div>
+          <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="400">
+            <i class="bx bx-shield"></i>
+            <h4>Focus on Security:</h4>
+            <p>User security is paramount to us. We're dedicated to enhancing security and maintaining user confidence.</p>
+          </div>
+        </div>
+        <div class="image col-lg-6 order-1 order-lg-2 " data-aos="zoom-in" data-aos-delay="100">
+          <img src="{% static 'assets/img/features.svg' %}" alt="" class="img-fluid">
+        </div>
+      </div>
+    {% endif %}
     </div>
   </section><!-- End Features Section -->
