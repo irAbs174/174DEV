@@ -14,7 +14,7 @@ def set_content_index(request):
     elif code == "ar":
         return JsonResponse({'status' : 'ar', 'success' : True})
     else:
-        return JsonResponse({'status' : 'BAD_REQUESR_403', 'success' : False})
+        return JsonResponse({'status' : 'BAD_REQUEST_403', 'success' : False})
 
 @csrf_exempt
 def set_language(request):
@@ -26,4 +26,4 @@ def set_language(request):
     elif code == "ar":
         return JsonResponse({'status' : 'ar', 'success' : True})
     else:
-        return JsonResponse({'status' : 'BAD_REQUESR_403', 'success' : False})
+        return JsonResponse({'status' : 'BAD_REQUEST_403', 'success' : False})

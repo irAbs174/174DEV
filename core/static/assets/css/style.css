@@ -275,7 +275,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #5846f9;
+  color: #f9ecff;
 }
 
 .navbar .dropdown:hover>ul {
@@ -348,6 +348,7 @@ h6 {
 }
 
 .navbar-mobile ul {
+  text-align: center;
   display: block;
   position: absolute;
   top: 55px;
@@ -355,7 +356,7 @@ h6 {
   bottom: 15px;
   left: 15px;
   padding: 10px 0;
-  background-color: #fff;
+  background-color: #e2e1e4;
   overflow-y: auto;
   transition: 0.3s;
 }
