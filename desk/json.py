@@ -32,8 +32,8 @@ def set_language(request):
 @csrf_exempt
 def add_newsletter_subscribe(request):
     email = request.POST.get('email')
+    lang = request.POST.get('lang')
     if email:
-        lang = request.POST.get('lang')
         if lang == 'fa':
             if Newsletter_Subscribe.objects.filter(email=email).exists():
                 return JsonResponse({'status': 'شما قبلا عضو خبرنامه شده اید', 'success': False})
@@ -62,4 +62,9 @@ def add_newsletter_subscribe(request):
                 )
                 return JsonResponse({'status': 'Thank you for your membership.', 'success': True})
     else:
-        return JsonResponse({'status': 'لطفا یک رایانامه معتبر وارد کنید', 'success': False})
+        if lang == 'fa':
+            return JsonResponse({'status': 'لطفا یک رایانامه معتبر وارد کنید', 'success': False})
+        elif lang == 'ar':
+            return JsonResponse({'status': 'يرجى إدخال بريد إلكتروني صالح', 'success': False})
+        else:
+            return JsonResponse({'status': 'Please enter a valid email.', 'success': False})
