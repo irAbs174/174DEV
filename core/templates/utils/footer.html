@@ -1,78 +1,195 @@
 <!-- ======= Footer ======= -->
 <footer id="footer">
-
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>Techie</h3>
-            <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
-            </p>
-          </div>
-
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Join Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
+  {% if LANGUAGE_CODE == 'fa' %}
+  <div class="footer-top">
     <div class="container">
+      <div class="row">
 
-      <div class="copyright-wrap d-md-flex py-4">
-        <div class="me-md-auto text-center text-md-start">
-          <div class="copyright">
-            &copy; Copyright <strong><span>Techie</span></strong>. All Rights Reserved
-          </div>
-          <div class="credits">
-            <!-- All the links in the footer should remain intact. -->
-            <!-- You can delete the links only if you purchased the pro version. -->
-            <!-- Licensing information: https://bootstrapmade.com/license/ -->
-            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/techie-free-skin-bootstrap-3/ -->
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-          </div>
+        <div class="col-lg-3 col-md-6 footer-contact">
+          <h3>174-Tech</h3>
+          <p>
+             خدمات نوین آزاد<br><br>
+            <strong>شماره تماس:</strong>09129585714<br>
+            <strong>رایانامه:</strong> damerchiloa@gmail.com<br>
+          </p>
         </div>
-        <div class="social-links text-center text-md-right pt-3 pt-md-0">
-          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+
+        <div class="col-lg-2 col-md-6 footer-links">
+          <h4>سایر خدمات ما</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">طراحی وبسایت</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">طراحی و وتوسعه وب اپلیکیشن</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">طراحی و توسعه اندروید</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">طراحی و توسعه آی او اس</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">طراحی و توسعه دسکتاب</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-6 footer-newsletter">
+          <h4>عضو خبرنامه ما شوید</h4>
+          <p>با عضویت در خبرنامه از سرویس های جدید و به روز رسانی ها با خبر شوید</p>
+          <form id="newsletter">
+            <input type="email" class="email" name="email" placeholder="رایانامه خود را وارد نمایید">
+            <input type="submit" value="Subscribe" id="submitButton">
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="copyright-wrap d-md-flex py-4">
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>174-Tech</span></strong>. تمامی حقوق محفوظ است
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/techie-free-skin-bootstrap-3/ -->
+          طراحی و توسعه <a href="https://174.one/">174-Tech</a>
         </div>
       </div>
-
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
     </div>
+
+  </div>
+  {% elif LANGUAGE_CODE == 'ar' %}
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+  
+        <div class="col-lg-3 col-md-6 footer-contact">
+          <h3>174-Tech</h3>
+          <p>
+            خدمات نوین آزاد<br><br>
+            <strong>الهاتف:</strong> +98 9129585714<br>
+            <strong>البريد الإلكتروني:</strong> damerchiloa@gmail.com<br>
+          </p>
+        </div>
+  
+        <div class="col-lg-2 col-md-6 footer-links">
+          <h4>خدماتنا الأخرى</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">تصميم مواقع الويب</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">تصميم وتطوير تطبيقات الويب</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">تصميم وتطوير تطبيقات الأندرويد</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">تصميم وتطوير تطبيقات iOS</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">تصميم وتطوير تطبيقات سطح المكتب</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-lg-4 col-md-6 footer-newsletter">
+          <h4>اشترك في النشرة الإخبارية لدينا</h4>
+          <p>مع الاشتراك في النشرة الإخبارية، ستكون على اطلاع بخدماتنا الجديدة والتحديثات.</p>
+          <form id="newsletter">
+            <input type="email" class="email" name="email" placeholder="أدخل بريدك الإلكتروني">
+            <input type="submit" value="اشتراك" id="submitButton">
+          </form>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+  
+  <div class="container">
+  
+    <div class="copyright-wrap d-md-flex py-4">
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; حقوق الطبع والنشر <strong><span>174-Tech</span></strong>. كل الحقوق محفوظة
+        </div>
+        <div class="credits">
+          <!-- جميع الروابط في التذييل يجب أن تبقى سليمة. -->
+          <!-- يمكنك حذف الروابط فقط إذا قمت بشراء النسخة المحترفة. -->
+          <!-- معلومات الترخيص: https://bootstrapmade.com/license/ -->
+          <!-- قم بشراء النسخة المحترفة التي تحتوي على نموذج اتصال PHP/AJAX العامل: https://bootstrapmade.com/techie-free-skin-bootstrap-3/ -->
+          تصميم وتطوير <a href="https://174.one/">174-Tech</a>
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  
+  </div>
+  
+  {% else %}
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+  
+        <div class="col-lg-3 col-md-6 footer-contact">
+          <h3>174-Tech</h3>
+          <p>
+            Innovative Free Services<br><br>
+            <strong>Phone:</strong> +98 9129585714<br>
+            <strong>Email:</strong> damerchiloa@gmail.com<br>
+          </p>
+        </div>
+  
+        <div class="col-lg-2 col-md-6 footer-links">
+          <h4>Other Services</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Website Design</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Application Design and Development</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Android App Design and Development</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">iOS App Design and Development</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Desktop App Design and Development</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-lg-4 col-md-6 footer-newsletter">
+          <h4>Subscribe to Our Newsletter</h4>
+          <p>Stay updated on our new services and updates by subscribing to the newsletter.</p>
+          <form id="newsletter">
+            <input type="email" class="email" name="email" placeholder="Enter your email">
+            <input type="submit" value="Subscribe" id="submitButton">
+          </form>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+  
+  <div class="container">
+  
+    <div class="copyright-wrap d-md-flex py-4">
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>174-Tech</span></strong>. All rights reserved.
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/techie-free-skin-bootstrap-3/ -->
+          Design & Development by <a href="https://174.one/">174-Tech</a>
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  
+  </div>
+  
+  {% endif %}
   </footer><!-- End Footer -->
