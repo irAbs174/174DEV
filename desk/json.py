@@ -3,19 +3,24 @@ from django.contrib.auth.decorators import login_required
 from django.views.decorators.csrf import csrf_exempt
 from .models import Newsletter_Subscribe
 from django.http import JsonResponse
+from ipaddr import client_ip
+import requests as R
 
 
 @csrf_exempt
 def set_content_index(request):
-    code = request.POST.get('code')
-    if code == "en" :
-        return JsonResponse({'status' : 'en', 'success' : True})
-    elif code == "fa":
+
+    # Find request country from ip address
+    response = R.get(f'https://freeipapi.com/api/json/{client_ip(request)}')
+    data = response.json()
+    country = data['countryCode']
+
+    if country == "IR":
         return JsonResponse({'status' : 'fa', 'success' : True})
-    elif code == "ar":
+    elif country in ["SA", "AE", "EG", "IQ", "KW", "SD", "SY", "YE"]: 
         return JsonResponse({'status' : 'ar', 'success' : True})
     else:
-        return JsonResponse({'status' : 'BAD_REQUEST_403', 'success' : False})
+        return JsonResponse({'status' : 'en', 'success' : True})
 
 @csrf_exempt
 def set_language(request):

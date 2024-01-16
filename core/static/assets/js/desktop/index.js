@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   });
 });
-
+/* 
 let currentPath = window.location.pathname;
 let slug = currentPath.split('/').filter(Boolean).pop();
 $(document).ready(function() {
@@ -64,11 +64,12 @@ $(document).ready(function() {
             timer: 3000,
           });
         } else {
-          console.log("NOTING !");
+          window.location.href = `/${response.status}`;
         }
       },
 });//End ajax
 });//end ready
+ */
 // => set_en
 $(".set_en").click(function() {
   console.log(slug);

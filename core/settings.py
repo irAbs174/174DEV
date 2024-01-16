@@ -17,7 +17,7 @@ SECRET_KEY = 'o)r!qmzkgrh3ejdxqqub&w3gp-!2d5l&bu5z=b14nkyin5b_7)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-irabs174-174dev-x3w58wguhd8.ws-eu107.gitpod.io']
+ALLOWED_HOSTS = ['8000-irabs174-174dev-hannp5y0ijx.ws-eu107.gitpod.io']
 
 
 # Application definition
@@ -126,6 +126,7 @@ MIDDLEWARE = [
     'cms.middleware.page.CurrentPageMiddleware',
     'cms.middleware.toolbar.ToolbarMiddleware',
     'cms.middleware.language.LanguageCookieMiddleware'
+    
 ]
 
 INSTALLED_APPS = [
@@ -168,7 +169,8 @@ INSTALLED_APPS = [
     'djangocms_googlemap',
     'djangocms_video',
     'core',
-   'desk'
+    'desk',
+    'ipaddr',
 ]
 
 LANGUAGE_CODE = 'fa'
