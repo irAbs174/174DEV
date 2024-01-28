@@ -45,31 +45,35 @@ document.addEventListener('DOMContentLoaded', function() {
 
   });
 });
-/* 
+
 let currentPath = window.location.pathname;
 let slug = currentPath.split('/').filter(Boolean).pop();
+let load_value = $(".first_load").val();
 $(document).ready(function() {
-  $.ajax({
-    url : '/desk/set_content_index',
-    type : 'POST',
-    data : {
-        'code': 'en',
-    },
-    success: function(response) {
-        if (response.success === false) {
-          Swal.fire({
-            icon: "error",
-            title: response.status,
-            showConfirmButton: false,
-            timer: 3000,
-          });
-        } else {
-          window.location.href = `/${response.status}`;
-        }
+  if (load_value == 0){
+    $(".first_load").val(1);
+    $.ajax({
+      url : '/desk/set_content_index',
+      type : 'POST',
+      data : {
+          'code': 'en',
       },
-});//End ajax
+      success: function(response) {
+          if (response.success === false) {
+            Swal.fire({
+              icon: "error",
+              title: response.status,
+              showConfirmButton: false,
+              timer: 3000,
+            });
+          } else {
+            window.location.href = `/${response.status}`;
+          }
+        },
+  });//End ajax
+  };// end if load_value
 });//end ready
- */
+
 // => set_en
 $(".set_en").click(function() {
   console.log(slug);
